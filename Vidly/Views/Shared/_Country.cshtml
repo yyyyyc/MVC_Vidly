@@ -1,0 +1,19 @@
+﻿@model Vidly.Models.Country
+
+<tr class="clsRed">
+    <td>
+        @Html.DisplayFor(modelItem => Model.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Area)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Population)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "EditCountry", new { id = Model.ID }) |
+        @Html.ActionLink("Details", "Details", new { id = Model.ID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.ID })
+    </td>
+</tr>
+

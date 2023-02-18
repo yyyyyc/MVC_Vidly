@@ -1,0 +1,18 @@
+﻿@model Vidly.Models.Country
+
+
+@{
+    ViewBag.Title = "YC";
+}
+
+<h2>YC</h2>
+
+@{
+    var countries = ViewBag.Countries as List<Vidly.Models.Country>;
+}
+<ul>
+    @foreach (var country in countries)
+    {
+    <li>@country.Name - Population: @country.Population, Area: @country.Area </li>
+    }
+</ul>
